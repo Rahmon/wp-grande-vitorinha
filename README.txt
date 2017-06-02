@@ -1,47 +1,30 @@
 === Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: rahmohn
 Donate link: https://github.com/Rahmon
-Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo
+Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, font
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Use easily the font "Grande Vitorinha" in your website.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
-
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+Grande Vitorinha font is inspired by beautiful cities of Espírito Santo in Brazil.
 
 == Installation ==
 
-1. Upload `wp-grande-vitorinha-font.php` to the `/wp-content/plugins/` directory
+1. Upload `wp-grande-vitorinha.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Use the shortcode [wp-gv-font][/wp-gv-font]
+1. Use the shortcode [wpgv][/wpgv]
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Can I change the size of the font? =
 
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+Yes, you can. Use the attribute "size" in shortcode, e.g.: [wpgv size=70]WP[/wpgv]. The size of font use pixel and the default value is 60.
 
 == Screenshots ==
 
