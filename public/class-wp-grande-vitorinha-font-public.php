@@ -61,26 +61,30 @@ class WP_Grande_Vitorinha_Font_Public {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Grande_Vitorinha_Font_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Grande_Vitorinha_Font_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wp-grande-vitorinha-font-public.css', array(), $this->version, 'all' );
 
 	}
 
 	public function wp_grande_vitorinha_shortcode_init() {
 
-		function wp_grande_vitorinha_shortcode( $atts =[], $content = null ) {
-			return '<span class="vitorinha">' . $content . '</span>';
+		function wp_grande_vitorinha_shortcode( $atts = [], $content = null, $tag = '' ) {
+
+			$atts = array_change_key_case( (array) $atts, CASE_LOWER );
+
+			$wpgv_atts = shortcode_atts( [
+				'size' => 16,
+			], $atts, $tag );
+
+			$o = '';
+			$o .= '<span class="vitorinha" style="font-size:' . esc_attr( $wpgv_atts['size'] ) . 'px">';
+
+			if ( ! is_null( $content ) ) {
+				$o .= do_shortcode( $content );
+			}
+
+			$o .= '</span>';
+
+			return $o;
 		}
 
 		add_shortcode( 'wpgv', 'wp_grande_vitorinha_shortcode' );
