@@ -8,8 +8,8 @@
  * @link       https://github.com/Rahmon
  * @since      1.0.0
  *
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/public/partials
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/public/partials
  */
 ?>
 

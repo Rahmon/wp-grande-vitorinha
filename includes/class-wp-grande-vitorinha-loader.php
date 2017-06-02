@@ -6,8 +6,8 @@
  * @link       https://github.com/Rahmon
  * @since      1.0.0
  *
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
  * @author     Rahmohn <https://github.com/Rahmon>
  */
-class WP_Grande_Vitorinha_Font_Loader {
+class WP_Grande_Vitorinha_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.
@@ -102,7 +102,7 @@ class WP_Grande_Vitorinha_Font_Loader {
 			'component'     => $component,
 			'callback'      => $callback,
 			'priority'      => $priority,
-			'accepted_args' => $accepted_args
+			'accepted_args' => $accepted_args,
 		);
 
 		return $hooks;

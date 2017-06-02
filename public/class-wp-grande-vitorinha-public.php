@@ -18,9 +18,9 @@
  *
  * @package    WP_Grande_Vitorinha_Font
  * @subpackage WP_Grande_Vitorinha_Font/public
- * @author     Rahmohn <https://github.com/Rahmon>
+ * @author     Rahmohn
  */
-class WP_Grande_Vitorinha_Font_Public {
+class WP_Grande_Vitorinha_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -61,7 +61,7 @@ class WP_Grande_Vitorinha_Font_Public {
 	 */
 	public function enqueue_styles() {
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wp-grande-vitorinha-font-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wp-grande-vitorinha-public.css', array(), $this->version, 'all' );
 
 	}
 

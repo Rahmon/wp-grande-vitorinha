@@ -10,7 +10,7 @@
  *
  * @link              https://github.com/Rahmon
  * @since             1.0.0
- * @package           WP_Grande_Vitorinha_Font
+ * @package           WP_Grande_Vitorinha
  *
  * @wordpress-plugin
  * Plugin Name:       WP Grande Vitorinha Font
@@ -21,7 +21,7 @@
  * Author URI:        https://github.com/Rahmon
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       wp-grande-vitorinha-font
+ * Text Domain:       wp-grande-vitorinha
  * Domain Path:       /languages
  */
 
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-wp-grande-vitorinha-font.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-wp-grande-vitorinha.php';
 
 /**
  * Begins execution of the plugin.
@@ -45,10 +45,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wp-grande-vitorinha-font.p
  *
  * @since    1.0.0
  */
-function run_wp_grande_vitorinha_font() {
+function run_wp_grande_vitorinha() {
 
-	$plugin = new WP_Grande_Vitorinha_Font();
+	$plugin = new WP_Grande_Vitorinha();
 	$plugin->run();
 
 }
-run_wp_grande_vitorinha_font();
+run_wp_grande_vitorinha();

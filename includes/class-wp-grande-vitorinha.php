@@ -9,8 +9,8 @@
  * @link       https://github.com/Rahmon
  * @since      1.0.0
  *
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
- * @author     Rahmohn <https://github.com/Rahmon>
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
+ * @author     Rahmohn
  */
-class WP_Grande_Vitorinha_Font {
+class WP_Grande_Vitorinha {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class WP_Grande_Vitorinha_Font {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      WP_Grande_Vitorinha_Font_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      WP_Grande_Vitorinha_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -68,7 +68,7 @@ class WP_Grande_Vitorinha_Font {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'wp-grande-vitorinha-font';
+		$this->plugin_name = 'wp-grande-vitorinha';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
@@ -99,21 +99,21 @@ class WP_Grande_Vitorinha_Font {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-grande-vitorinha-font-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-grande-vitorinha-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-grande-vitorinha-font-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-grande-vitorinha-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-grande-vitorinha-font-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-wp-grande-vitorinha-public.php';
 
-		$this->loader = new WP_Grande_Vitorinha_Font_Loader();
+		$this->loader = new WP_Grande_Vitorinha_Loader();
 
 	}
 
@@ -128,7 +128,7 @@ class WP_Grande_Vitorinha_Font {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new WP_Grande_Vitorinha_Font_i18n();
+		$plugin_i18n = new WP_Grande_Vitorinha_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -143,10 +143,10 @@ class WP_Grande_Vitorinha_Font {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new WP_Grande_Vitorinha_Font_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new WP_Grande_Vitorinha_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'init', $plugin_public, 'wp_grande_vitorinha_shortcode_init');
+		$this->loader->add_action( 'init', $plugin_public, 'wp_grande_vitorinha_shortcode_init' );
 
 	}
 

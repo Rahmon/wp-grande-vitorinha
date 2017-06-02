@@ -22,7 +22,7 @@
  * @link       https://github.com/Rahmon
  * @since      1.0.0
  *
- * @package    WP_Grande_Vitorinha_Font
+ * @package    WP_Grande_Vitorinha
  */
 
 // If uninstall not called from WordPress, then exit.

@@ -9,8 +9,8 @@
  * @link       https://github.com/Rahmon
  * @since      1.0.0
  *
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    WP_Grande_Vitorinha_Font
- * @subpackage WP_Grande_Vitorinha_Font/includes
- * @author     Rahmohn <https://github.com/Rahmon>
+ * @package    WP_Grande_Vitorinha
+ * @subpackage WP_Grande_Vitorinha/includes
+ * @author     Rahmohn
  */
-class WP_Grande_Vitorinha_Font_i18n {
+class WP_Grande_Vitorinha_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class WP_Grande_Vitorinha_Font_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'wp-grande-vitorinha-font',
+			'wp-grande-vitorinha',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
