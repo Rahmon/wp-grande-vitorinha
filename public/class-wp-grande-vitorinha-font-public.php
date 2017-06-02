@@ -72,7 +72,7 @@ class WP_Grande_Vitorinha_Font_Public {
 			$atts = array_change_key_case( (array) $atts, CASE_LOWER );
 
 			$wpgv_atts = shortcode_atts( [
-				'size' => 16,
+				'size' => 60,
 			], $atts, $tag );
 
 			$o = '';
