@@ -72,11 +72,12 @@ class WP_Grande_Vitorinha_Public {
 			$atts = array_change_key_case( (array) $atts, CASE_LOWER );
 
 			$wpgv_atts = shortcode_atts( [
+				'color' => '#333333',
 				'size' => 60,
 			], $atts, $tag );
 
 			$o = '';
-			$o .= '<span class="vitorinha" style="font-size:' . esc_attr( $wpgv_atts['size'] ) . 'px">';
+			$o .= '<span class="vitorinha" style="font-size:' . esc_attr( $wpgv_atts['size'] ) . 'px; color:' . esc_attr( $wpgv_atts['color'] ) . ';">';
 
 			if ( ! is_null( $content ) ) {
 				$o .= do_shortcode( $content );

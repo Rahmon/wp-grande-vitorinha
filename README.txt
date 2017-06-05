@@ -22,9 +22,13 @@ Grande Vitorinha font is inspired by beautiful cities of Espírito Santo in Braz
 
 == Frequently Asked Questions ==
 
-= Can I change the size of the font? =
+= How change the font size? =
 
-Yes, you can. Use the attribute "size" in shortcode, e.g.: [wpgv size=70]WP[/wpgv]. The size of font use pixel and the default value is 60.
+Use the attribute "size" in shortcode, e.g.: [wpgv size=70]WP[/wpgv]. The size of font use pixel and the default value is 60.
+
+= How change the font color? =
+
+Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. You need to use the hexadecimal format.
 
 == Screenshots ==
 
