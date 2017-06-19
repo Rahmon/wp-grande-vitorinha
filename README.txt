@@ -1,7 +1,7 @@
-=== Plugin Name ===
+=== WP Grande Vitorinha ===
 Contributors: rahmohn
 Donate link: https://github.com/Rahmon
-Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, font
+Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, fonte
 Requires at least: 3.0.1
 Tested up to: 3.4
 Stable tag: 4.3
@@ -28,15 +28,7 @@ Use the attribute "size" in shortcode, e.g.: [wpgv size=70]WP[/wpgv]. The size o
 
 = How change the font color? =
 
-Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. You need to use the hexadecimal format.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. You need to use the hexadecimal format and the default value is #333333.
 
 == Changelog ==
 
