@@ -13,7 +13,7 @@
  * @package           WP_Grande_Vitorinha
  *
  * @wordpress-plugin
- * Plugin Name:       WP Grande Vitorinha Font
+ * Plugin Name:       WP Grande Vitorinha
  * Plugin URI:        https://github.com/Rahmon
  * Description:       Use easily the font "Grande Vitorinha" in your website.
  * Version:           1.0.0
