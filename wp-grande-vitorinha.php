@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       WP Grande Vitorinha
- * Plugin URI:        https://github.com/Rahmon
+ * Plugin URI:        https://github.com/Rahmon/wp-grande-vitorinha
  * Description:       Use easily the font "Grande Vitorinha" in your website.
  * Version:           1.0.0
  * Author:            Rahmohn
