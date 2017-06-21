@@ -2,9 +2,9 @@
 Contributors: rahmohn
 Donate link: https://github.com/Rahmon
 Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, fonte
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
+Requires at least: 4.0
+Tested up to: 4.8
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,7 @@ Use easily the font "Grande Vitorinha" in your website.
 == Description ==
 
 Grande Vitorinha font is inspired by beautiful cities of Espírito Santo in Brazil.
+If you need know more about this font, check out the [official website](http://www.grandevitorinha.com.br/download.html).
 
 == Installation ==
 
