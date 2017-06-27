@@ -35,3 +35,7 @@ Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. Y
 
 = 1.0 =
 * Initial release
+
+== Credits ==
+
+* Grande Vitorinha Font - http://www.grandevitorinha.com.br/, [OFL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
