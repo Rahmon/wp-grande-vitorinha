@@ -3,7 +3,7 @@ Contributors: rahmohn
 Donate link: https://github.com/Rahmon
 Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, fonte
 Requires at least: 4.0
-Tested up to: 4.8
+Tested up to: 4.9
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -35,7 +35,3 @@ Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. Y
 
 = 1.0 =
 * Initial release
-
-== Credits ==
-
-* Grande Vitorinha Font - http://www.grandevitorinha.com.br/, [OFL](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
