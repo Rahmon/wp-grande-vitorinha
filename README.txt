@@ -4,7 +4,7 @@ Donate link: https://github.com/Rahmon
 Tags: font, grande vitorinha, vitorinha, Vitória, ES, Espírito Santo, fonte
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Use the attribute "size" in shortcode, e.g.: [wpgv size=70]WP[/wpgv]. The size o
 Use the attribute "color" in shortcode, e.g.: [wpgv color="#bdc3c7"]WP[/wpgv]. You need to use the hexadecimal format and the default value is #333333.
 
 == Changelog ==
+
+= 1.0.1 =
+* Updated "tested up to"
 
 = 1.0 =
 * Initial release
